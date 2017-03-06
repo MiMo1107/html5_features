@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 features</title>
+    <link href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/alertifyjs/css/alertify.rtl.css">
+    <link rel="stylesheet" href="js/alertifyjs/css/themes/default.rtl.css">
+    <script src="js/alertifyjs/alertify.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="text-center">
+    <img src="img/global-franchise-blue-header.jpg" height="100">
+    <h1>Cookie and localstorage</h1>
+</header>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">HTML5 features</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Forside</a></li>
+            <li><a href="svg.html">SVG draw</a></li>
+            <li><a href="geo.html">GEO location</a></li>
+            <li class="active"><a href="cookie.html">Cookie and localstorage</a></li>
+            <li><a href="canvas.html">Canvas draw</a></li>
+            <li><a href="worker.html">Web worker</a></li>
+            <li><a href="drag.html">Drag and drop</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="panel panel-body">
+    <h3>Brug knapperne....</h3>
+    <p>Jeg kunne vel beskrive ydderelige men... nahh..</p>
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Vis log</button>
+    <button type="button" class="btn btn-info btn-lg" onclick="checkCookie()">Cookies</button>
+    <button type="button" class="btn btn-warning btn-lg" onclick="clearCookies()">Slet cookies</button>
+    <button type="button" class="btn btn-danger btn-lg" onclick="clearLocalStorage()">Slet lokal lagering</button>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sidste besøg</h4>
+            </div>
+            <div class="modal-body">
+                <p id="modalText"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Luk</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/myjs.js"></script>
+</body>
+</html>

@@ -92,5 +92,6 @@ function clearCookies() {
 
 function clearLocalStorage() {
     localStorage.clear();
+    document.getElementById("modalText").innerHTML = "Lokal lagering blev slettet, så intet at vise her :/";
     alertify.message('Lokal lagering blev slettet!');
 }
