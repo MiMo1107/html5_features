@@ -1,0 +1,9 @@
+.modal-dialog
+{
+    opacity:0.95 !important;
+}
+.modal-body
+{
+    max-height: 400px;
+    overflow-y: auto;
+}
